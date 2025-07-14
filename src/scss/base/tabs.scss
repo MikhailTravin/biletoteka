@@ -1,0 +1,65 @@
+.tabs {
+	// .tabs__content
+	&__content {
+	}
+	// .tabs__time-table
+	&__time-table {
+	}
+	// .tabs__navigation
+	&__navigation {
+		margin: 0px 0px 40px 0px;
+		width: 100%;
+		overflow: auto;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		@media (max-width: $pc) {
+			padding: 0px 15px;
+			width: calc(100% + 30px);
+			margin: 0px -15px 40px -15px;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px -15px 30px -15px;
+		}
+	}
+	// .tabs__titles
+	&__titles {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	// .tabs__title
+	&__title {
+		flex: 0 1 auto;
+		padding: 0px 10px 0px 0px;
+		&:last-child {
+			padding: 0px 15px 0px 0px;
+		}
+		&._tab-active {
+			span {
+				background: $mainColor;
+				color: $white;
+			}
+		}
+		&:hover {
+			span {
+				background: $grey;
+				color: $white;
+			}
+		}
+		span {
+			white-space: nowrap;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 100%;
+			background: #f4f4f4;
+			border-radius: 30px;
+			padding: 18px 20px;
+			transition: all 0.3s ease 0s;
+		}
+	}
+}

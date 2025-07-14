@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оформление заказа"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="breadcrambs">
+				<div class="breadcrambs__container">
+					<div class="breadcrambs__content">
+						<ul>
+							<li>
+								<a href="#">
+									Главная
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Афиша
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Концерт
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Классика
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									ROCKCELLOS: МИРОВЫЕ РОК-ХИТЫ НА ВИОЛОНЧЕЛЯХ
+									<span>/</span>
+								</a>
+							</li>
+							<li><span>Оформление заказа</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page__order-placement order-placement">
+				<div class="order-placement__container">
+					<h1>Оформление заказа</h1>
+					<div class="order-placement__content">
+						<div class="order-placement__top top-order-placement">
+							<div class="top-order-placement__image">
+								<picture>
+									<source type="image/webp"
+										srcset="img/poster/image-10.webp 1x, img/poster/image-10@2x.webp 2x">
+									<img loading="lazy" src="img/poster/image-10.webp"
+										srcset="img/poster/image-10.webp 1x, img/poster/image-10@2x.webp 2x" alt>
+								</picture>
+							</div>
+							<div class="top-order-placement__desc">
+								<h5>
+									ROCKCELLOS: МИРОВЫЕ РОК-ХИТЫ НА ВИОЛОНЧЕЛЯХ
+								</h5>
+								<p>
+									Чт, 26 сентября, 19:00
+								</p>
+								<div class="top-order-placement__places">
+									<span>КЗ «Измайлово»</span>
+									<span class="_icon-location">г. Санкт-Петербург, Пироговская наб., 5/2</span>
+								</div>
+							</div>
+						</div>
+						<div class="order-placement__bottom">
+							<div class="order-placement__desc desc-order-placement">
+								<div class="desc-order-placement__content">
+									<div class="desc-order-placement__top">
+										<a data-da=".order-placement__bottom, 991.98, first" href="#"
+											class="desc-order-placement__back _icon-arrow-2">Назад</a>
+										<h5>билеты</h5>
+									</div>
+									<div data-simplebar class="desc-order-placement__simplebar">
+										<div class="desc-order-placement__body">
+											<div class="desc-order-placement__column">
+												<div class="desc-order-placement__item">
+													<div class="desc-order-placement__titles">
+														<div class="desc-order-placement__number">№1</div>
+														<div class="desc-order-placement__items">
+															<p>2-ой Амфитеатр середина</p>
+															<p>
+																1 ряд,
+																<br>
+																11 место
+															</p>
+															<div class="desc-order-placement__price">3 100 ₽</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="desc-order-placement__column">
+												<div class="desc-order-placement__item">
+													<div class="desc-order-placement__titles">
+														<div class="desc-order-placement__number">№2</div>
+														<div class="desc-order-placement__items">
+															<p>2-ой Амфитеатр середина</p>
+															<p>
+																1 ряд,
+																<br>
+																12 место
+															</p>
+															<div class="desc-order-placement__price">3 100 ₽</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="desc-order-placement__bottom">
+										<p>
+											Итого к оплате:
+										</p>
+										<div class="desc-order-placement__total">
+											3 100 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-placement__forms">
+								<form action="#" data-dev data-popup-message="#form-message" class="forms__form form">
+									<h5>данные для получения заказа</h5>
+									<div class="form__inputs">
+										<div class="form__input">
+											<label for="name">ФИО<span>*</span></label>
+											<input data-required id="name" autocomplete="off" type="text" name="form[1]"
+												data-error="Обязательное поле" placeholder="Введите Ваше ФИО">
+										</div>
+									</div>
+									<div class="form__inputs">
+										<div class="form__input">
+											<label for="email">E-mail<span>*</span></label>
+											<input data-required="email" data-validate id="email" autocomplete="off"
+												type="text" name="form[1]" data-error="Обязательное поле"
+												placeholder="Введите Ваш E-mail">
+										</div>
+									</div>
+									<div class="form__inputs">
+										<div class="form__input">
+											<label for="email_2">Подтвердите E-mail*<span>*</span></label>
+											<input data-required="email" data-validate id="email_2" autocomplete="off"
+												type="text" name="form[1]" data-error="Обязательное поле"
+												placeholder="Подтвердите E-mail*">
+										</div>
+									</div>
+									<div class="form__inputs">
+										<div class="form__input">
+											<label for="telephone">Телефон<span>*</span></label>
+											<input data-required id="telephone" autocomplete="off" type="text"
+												name="form[1]" data-error="Обязательное поле"
+												placeholder="+7 (000) 000-00-00" class="telephone">
+										</div>
+									</div>
+									<div class="form__inputs">
+										<div class="form__input">
+											<label for="textarea">Комментарий</label>
+											<textarea id="textarea" placeholder="Введите текст комментария"></textarea>
+										</div>
+									</div>
+									<div class="form__buttons">
+										<div class="form__checkbox checkbox">
+											<input data-required id="c_1" class="checkbox__input" type="checkbox"
+												value="1" name="form[1]">
+											<label for="c_1" class="checkbox__label">
+												<span class="checkbox__icon _icon-check"></span>
+												<span class="checkbox__text">
+													Соглашаюсь на обработку <a href="#">персональных данных</a> и с
+													<a href="#">публичной офертой</a>
+												</span>
+											</label>
+										</div>
+										<button type="submit" class="form__button button">оплатить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+	<!--Маски-->
+	<script src="js/inputmask.js"></script>
+</body>
+
+</html>

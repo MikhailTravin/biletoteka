@@ -1,0 +1,118 @@
+.select {
+	position: relative;
+	// .select__menu
+	&__menu {
+		position: relative;
+		&._active {
+			.select__btntext {
+				input {
+					border: 1px solid $mainColor;
+				}
+			}
+			.select__arrow {
+				transform: rotate(180deg);
+			}
+			.select__body {
+				display: block;
+			}
+		}
+	}
+	// .select__btn
+	&__btn {
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+	// .select__btntext
+	&__btntext {
+		width: 100%;
+		position: relative;
+		input {
+			pointer-events: none;
+			height: 100%;
+			padding: 18px 42px 18px 20px;
+		}
+	}
+	// .select__input
+	&__input {
+		pointer-events: none;
+		padding: 18px 20px !important;
+	}
+	// .select__icon
+	&__icon {
+		position: absolute;
+		top: 50%;
+		transform: translate(0px, -50%);
+		z-index: 5;
+		left: 20px;
+		&::before {
+			font-size: 16px;
+		}
+	}
+	// .select__arrow
+	&__arrow {
+		cursor: pointer;
+		position: absolute;
+		top: 22px;
+		right: 20px;
+		transition: all 0.3s ease 0s;
+		z-index: 5;
+		&::before {
+			font-size: 10px;
+		}
+	}
+	// .select__body
+	&__body {
+		outline: none;
+		display: none;
+		position: absolute;
+		top: 115%;
+		left: 0;
+		width: 100%;
+		min-width: 226px;
+		z-index: 15;
+	}
+	// .select__search
+	&__search {
+		margin: 0px 0px 20px 0px;
+		input {
+			font-size: 14px;
+			padding: 10px 10px 10px 40px !important;
+		}
+	}
+	// .select__content
+	&__content {
+		box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.24);
+		background: $white;
+		border-radius: 26px;
+		padding: 20px 12px 20px 20px;
+	}
+	// .select__options
+	&__options {
+		margin: -9px 0px;
+	}
+	// .select__simplebar
+	&__simplebar {
+		max-height: 274px;
+	}
+	// .select__option
+	&__option {
+		display: flex;
+		padding: 9px 0px;
+		&._active {
+			display: none;
+		}
+	}
+	// .select__option-text
+	&__option-text {
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 100%;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $blue;
+		}
+	}
+}

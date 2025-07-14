@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Площадки"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="breadcrambs">
+				<div class="breadcrambs__container">
+					<div class="breadcrambs__content">
+						<ul>
+							<li>
+								<a href="#">
+									Главная
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<span>Площадки</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page__platforms platforms">
+				<div class="platforms__container">
+					<h1>Площадки</h1>
+					<div class="platforms__content">
+						<div class="platforms__filter filter">
+							<div class="filter__forms form">
+								<div class="form__inputs form-search">
+									<div class="form__input">
+										<div class="form__icon _icon-search"></div>
+										<input autocomplete="off" type="text" name="form[1]"
+											placeholder="Поиск по площадкам...">
+									</div>
+								</div>
+								<div class="form__inputs">
+									<div class="form__input">
+										<div class="form__select select">
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext">
+														<div class="select__icon _icon-location"></div>
+														<input autocomplete="off" type="text" name="form[2]"
+															value="Город" placeholder="Город">
+													</div>
+													<div class="select__arrow _icon-arrow"></div>
+												</div>
+												<div class="select__body">
+													<div class="select__content">
+														<div class="select__search form">
+															<div class="form__input">
+																<div class="form__icon _icon-search"></div>
+																<input autocomplete="off" type="text" name="form[2]"
+																	placeholder="Город...">
+															</div>
+														</div>
+														<div data-simplebar class="select__simplebar">
+															<div class="select__options">
+																<div class="select__option">
+																	<div class="select__option-text">Екатеринбург</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Нижний Новгород
+																	</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Уфа</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Екатеринбург</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Нижний Новгород
+																	</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Уфа</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Екатеринбург</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Нижний Новгород
+																	</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Уфа</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form__inputs">
+									<div class="form__input">
+										<div class="form__select select">
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext">
+														<input autocomplete="off" type="text" name="form[]"
+															value="Площадка" placeholder="Площадка"
+															class="select__input">
+													</div>
+													<div class="select__arrow _icon-arrow"></div>
+												</div>
+												<div class="select__body">
+													<div class="select__content">
+														<div data-simplebar class="select__simplebar">
+															<div class="select__options">
+																<div class="select__option">
+																	<div class="select__option-text">
+																		Площадка_1
+																	</div>
+																</div>
+																<div class="select__option">
+																	<div class="select__option-text">Площадка_2</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form__filter-mob filter-mob">
+									<div data-popup="#filter-popup-platforms" class="filter-mob__icon _icon-filter">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="platforms__body">
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-1.webp 1x, img/platforms/image-1@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-1.webp"
+													srcset="img/platforms/image-1.webp 1x, img/platforms/image-1@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">Aurora Сoncert Hall</div>
+											<div class="item-platforms__location _icon-location">г. Санкт-Петербург,
+												Пироговская наб., 5/2</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-2.webp 1x, img/platforms/image-2@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-2.webp"
+													srcset="img/platforms/image-2.webp 1x, img/platforms/image-2@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">Ледовый дворец</div>
+											<div class="item-platforms__location _icon-location">г. Санкт-Петербург,
+												просп. Пятилеток, 1</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-3.webp 1x, img/platforms/image-3@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-3.webp"
+													srcset="img/platforms/image-3.webp 1x, img/platforms/image-3@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">ТЕАТР КОМЕДИАНТЫ</div>
+											<div class="item-platforms__location _icon-location">г. Санкт-Петербург,
+												Лиговский просп., 44</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-4.webp 1x, img/platforms/image-4@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-4.webp"
+													srcset="img/platforms/image-4.webp 1x, img/platforms/image-4@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">ТЕАТР «ЛЕНКОМ МАРКА ЗАХАРОВА»</div>
+											<div class="item-platforms__location _icon-location">г. Москва,
+												ул. Малая Дмитровка, д. 6</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-5.webp 1x, img/platforms/image-5@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-5.webp"
+													srcset="img/platforms/image-5.webp 1x, img/platforms/image-5@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">ДК "ГАГАРИНА" СЕРГИЕВ ПОСАД АФИША
+											</div>
+											<div class="item-platforms__location _icon-location">Московская обл.,
+												г. Сергиев Посад, пр-т Красной Армии, д. 185</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-6.webp 1x, img/platforms/image-6@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-6.webp"
+													srcset="img/platforms/image-6.webp 1x, img/platforms/image-6@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">АКАДЕМИЯ «СПАРТАК» ПО ФУТБОЛУ ИМЕНИ
+												Ф. ЧЕРЕНКОВА</div>
+											<div class="item-platforms__location _icon-location">г. Москва,
+												Малый Олений пер., д. 23</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-7.webp 1x, img/platforms/image-7@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-7.webp"
+													srcset="img/platforms/image-7.webp 1x, img/platforms/image-7@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">КЛУБ «BASE»</div>
+											<div class="item-platforms__location _icon-location">г. Москва,
+												ул. Орджоникидзе, д. 11, стр. 1</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+							<div class="platforms__column">
+								<a href="#" class="platforms__item item-platforms">
+									<div class="item-platforms__content">
+										<div class="item-platforms__image">
+											<picture>
+												<source type="image/webp"
+													srcset="img/platforms/image-8.webp 1x, img/platforms/image-8@2x.webp 2x">
+												<img loading="lazy" src="img/platforms/image-8.webp"
+													srcset="img/platforms/image-8.webp 1x, img/platforms/image-8@2x.webp 2x"
+													alt>
+											</picture>
+										</div>
+										<div class="item-platforms__desc">
+											<div class="item-platforms__title title">ГОСУДАРСТВЕННЫЙ КРЕМЛЕВСКИЙ ДВОРЕЦ
+												(ГКД)</div>
+											<div class="item-platforms__location _icon-location">г. Москва,
+												Кремль (м. Александровский сад, Боровицкая, Библиотека им. Ленина)</div>
+										</div>
+									</div>
+									<div class="item-platforms__buttons">
+										<div class="item-platforms__text title">смотреть афишу</div>
+										<div class="item-platforms__button button _icon-arrow-3"></div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="platforms__button button">загрузить еще</button>
+					<div class="platforms__pagging pagging">
+						<span class="pagging__arrow">
+							<span class="pagging__arrow-prev _icon-arrow-2"></span>
+						</span>
+						<span class="pagging__number _active-pagging">1</span>
+						<a href="#" class="pagging__number">2</a>
+						<a href="#" class="pagging__number">3</a>
+						<a href="#" class="pagging__number pagging-glasses">...</a>
+						<a href="#" class="pagging__number">12</a>
+						<a href="#" class="pagging__arrow">
+							<span class="pagging__arrow-next _icon-arrow-2"></span>
+						</a>
+					</div>
+					<div class="platforms__border border"></div>
+				</div>
+			</div>
+			<div class="page__about about">
+				<div class="about__container">
+					<div class="about__items">
+						<div class="about__content">
+							<h3>консьерж-сервис «Билетотека»</h3>
+							<a href="#" class="about__button button">подробнее</a>
+						</div>
+						<div class="about__text">
+							<p>
+								«Билетотека» — сервис, предоставляющий услуги по бронированию и оформлению билетов на
+								самые разнообразные мероприятия, от концертов и театральных постановок до спортивных
+								соревнований и культурных фестивалей. Наша команда профессионалов стремится сделать
+								процесс выбора и покупки билетов максимально простым и удобным.
+							</p>
+							<p>
+								Мы гордимся тем, что предлагаем нашим клиентам широкий выбор событий, подходящих для
+								любого настроения и бюджета. Благодаря интуитивно понятному интерфейсу нашего сайта и
+								мобильного приложения вы сможете быстро найти и забронировать билеты на понравившееся
+								мероприятие, а также узнать последние новости и обновления в мире развлечений.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_popup-filter-platforms.htm',{})
+	@@include('html/_js.htm',{})
+	<!--Селект-->
+	<script src="js/select.js"></script>
+</body>
+
+</html>

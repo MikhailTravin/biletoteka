@@ -1,0 +1,26 @@
+.contacts {
+    h1 {
+        text-align: center;
+    }
+    .title-forms__contacts {
+        p {
+            margin: 0px 0px 16px 0px;
+        }
+    }
+    .title-forms__contact {
+        margin: 0px 0px 34px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 40px 0px;
+        }
+    }
+    .title-forms__phone {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        color: $white;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $mobile) {
+            font-size: 24px;
+        }
+    }
+}

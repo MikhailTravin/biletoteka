@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Ошибка платежа"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="breadcrambs">
+				<div class="breadcrambs__container">
+					<div class="breadcrambs__content">
+						<ul>
+							<li>
+								<a href="#">
+									Главная
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Афиша
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Концерт
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Классика
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									ROCKCELLOS: МИРОВЫЕ РОК-ХИТЫ НА ВИОЛОНЧЕЛЯХ
+									<span>/</span>
+								</a>
+							</li>
+							<li><span>Ошибка платежа</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page__payment-error payment">
+				<div class="payment__container">
+					<div class="payment__content">
+						<div class="payment__top top-payment">
+							<h1>ошибка платежа</h1>
+							<p>
+								Что-то пошло не так. Попробуйте повторить платеж.
+							</p>
+							<a href="#" class="top-payment__buttons">
+								<div class="top-payment__title title">к бронированию</div>
+								<div class="top-payment__button button _icon-arrow-3"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!--Выбор города-->
+<div id="location" aria-hidden="true" class="popup location fix-block">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__location">
+				<div class="location__top popup-top">
+					<div class="location__title popup-top-title">
+						Выберите <span>Ваш</span> город
+					</div>
+					<div class="location__city _icon-location">
+						<span>Москва</span>
+					</div>
+				</div>
+				<div class="location__content">
+					<div class="location__search form">
+						<div class="form__inputs">
+							<div class="form__input">
+								<div class="form__icon _icon-search"></div>
+								<input autocomplete="off" type="text" name="form[2]" placeholder="Поиск по городам...">
+							</div>
+						</div>
+					</div>
+					<div class="location__body">
+						<div class="location__row">
+							<div class="location__column">
+								<div class="location__letter title">A</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_1" class="options__input" checked type="radio" value="1"
+											name="option">
+										<label for="o_1" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text _active">
+												<span>Архангельск</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_2" class="options__input" type="radio" value="2"
+											name="option">
+										<label for="o_2" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Астрахань</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">Б</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_3" class="options__input" type="radio" value="3"
+											name="option">
+										<label for="o_3" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Барнаул</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_4" class="options__input" type="radio" value="4"
+											name="option">
+										<label for="o_4" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Белгород</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_5" class="options__input" type="radio" value="5"
+											name="option">
+										<label for="o_5" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Брянск</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">В</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_6" class="options__input" type="radio" value="6"
+											name="option">
+										<label for="o_6" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Волгоград</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_7" class="options__input" type="radio" value="7"
+											name="option">
+										<label for="o_7" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Вологда</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_8" class="options__input" type="radio" value="8"
+											name="option">
+										<label for="o_8" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Воронеж</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="location__row">
+							<div class="location__column">
+								<div class="location__letter title">Е</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_9" class="options__input" type="radio" value="9"
+											name="option">
+										<label for="o_9" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Екатеринбург</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">И</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_10" class="options__input" type="radio" value="10"
+											name="option">
+										<label for="o_10" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Ижевск</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">К</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_11" class="options__input" type="radio" value="11"
+											name="option">
+										<label for="o_11" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Казань</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_12" class="options__input" type="radio" value="12"
+											name="option">
+										<label for="o_12" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Калуга</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_13" class="options__input" type="radio" value="13"
+											name="option">
+										<label for="o_13" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Краснодар</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_14" class="options__input" type="radio" value="14"
+											name="option">
+										<label for="o_14" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Красноярск</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">М</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_15" class="options__input" type="radio" value="15"
+											name="option">
+										<label for="o_15" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Магадан</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_16" class="options__input" type="radio" value="16"
+											name="option">
+										<label for="o_16" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Москва</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="location__row">
+							<div class="location__column">
+								<div class="location__letter title">Н</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_17" class="options__input" type="radio" value="17"
+											name="option">
+										<label for="o_17" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Нижний Новгород</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_18" class="options__input" type="radio" value="18"
+											name="option">
+										<label for="o_18" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Новосибирск</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">О</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_19" class="options__input" type="radio" value="19"
+											name="option">
+										<label for="o_19" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Омск</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_20" class="options__input" type="radio" value="20"
+											name="option">
+										<label for="o_20" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Оренбург</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">П</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_21" class="options__input" type="radio" value="21"
+											name="option">
+										<label for="o_21" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Пенза</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_22" class="options__input" type="radio" value="22"
+											name="option">
+										<label for="o_22" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Пермь</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">Р</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_23" class="options__input" type="radio" value="23"
+											name="option">
+										<label for="o_23" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Ростов-на-Дону</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="location__row">
+							<div class="location__column">
+								<div class="location__letter title">С</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_24" class="options__input" type="radio" value="24"
+											name="option">
+										<label for="o_24" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Салехард</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_25" class="options__input" type="radio" value="25"
+											name="option">
+										<label for="o_25" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Самара</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_26" class="options__input" type="radio" value="26"
+											name="option">
+										<label for="o_26" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Санкт-Петербург</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_27" class="options__input" type="radio" value="27"
+											name="option">
+										<label for="o_27" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Смоленск</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_28" class="options__input" type="radio" value="28"
+											name="option">
+										<label for="o_28" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Сочи</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_29" class="options__input" type="radio" value="29"
+											name="option">
+										<label for="o_29" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Ставрополь</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">Т</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_30" class="options__input" type="radio" value="30"
+											name="option">
+										<label for="o_30" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Тула</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_31" class="options__input" type="radio" value="31"
+											name="option">
+										<label for="o_31" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Тюмень</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">У</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_32" class="options__input" type="radio" value="32"
+											name="option">
+										<label for="o_32" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Уфа</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="location__row">
+							<div class="location__column">
+								<div class="location__letter title">Х</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_33" class="options__input" type="radio" value="33"
+											name="option">
+										<label for="o_33" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Хабаровск</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_34" class="options__input" type="radio" value="34"
+											name="option">
+										<label for="o_34" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Ханты-Мансийск</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">Ч</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_35" class="options__input" type="radio" value="35"
+											name="option">
+										<label for="o_35" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Чебоксары</span>
+											</a>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_36" class="options__input" type="radio" value="36"
+											name="option">
+										<label for="o_36" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Челябинск</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">Ю</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_37" class="options__input" type="radio" value="37"
+											name="option">
+										<label for="o_37" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Южно-Сахалинск</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="location__column">
+								<div class="location__letter title">Я</div>
+								<div class="location__options options">
+									<div class="options__item">
+										<input hidden id="o_38" class="options__input" type="radio" value="38"
+											name="option">
+										<label for="o_38" class="options__label">
+											<span class="options__icon _icon-check"></span>
+											<a href="#" class="options__text">
+												<span>Ярославль</span>
+											</a>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

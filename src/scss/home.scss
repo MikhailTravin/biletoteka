@@ -1,0 +1,361 @@
+.main-home {
+    margin: 30px 0px 100px 0px;
+    @media (max-width: $mobile) {
+        margin: 20px 0px 80px 0px;
+    }
+    // .main-home__container
+    &__container {
+    }
+    // .main-home__content
+    &__content {
+        position: relative;
+    }
+    // .main-home__slider
+    &__slider {
+        @media (max-width: $tablet) {
+            z-index: 25;
+            position: relative;
+        }
+    }
+    // .main-home__wrapper
+    &__wrapper {
+    }
+    // .main-home__slide
+    &__slide {
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+    // .main-home__arrows
+    &__arrows {
+        @media (max-width: $tablet) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px 0px 0px;
+            z-index: 20;
+        }
+        @media (max-width: $mobile) {
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    // .main-home__arrow-prev
+    &__arrow-prev {
+        position: absolute;
+        top: 211px;
+        left: -30px;
+        margin: 0px 0px 0px 0px;
+        z-index: 20;
+        @media (max-width: $pc) {
+            left: -15px;
+        }
+        @media (max-width: $tablet) {
+            top: 490px;
+            left: 0;
+        }
+    }
+    // .main-home__arrow-next
+    &__arrow-next {
+        position: absolute;
+        top: 211px;
+        right: -30px;
+        margin: 0px 0px 0px 0px;
+        z-index: 20;
+        @media (max-width: $pc) {
+            right: -15px;
+        }
+        @media (max-width: $tablet) {
+            top: 490px;
+            right: 0;
+        }
+    }
+}
+
+.slide-main-home {
+    // .slide-main-home__body
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            justify-content: start;
+        }
+    }
+    // .slide-main-home__column
+    &__column {
+        flex: 1 1 927px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px 0px 0px;
+        @media (max-width: $tablet) {
+            flex: 0 0 470px;
+            height: 470px;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    // .slide-main-home__item
+    &__item {
+        position: relative;
+        flex: 1 1 800px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px;
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+        }
+        @media (max-width: $mobile) {
+            padding: 15px;
+        }
+        @media (max-width: $mobileSmall) {
+            padding: 0px 0px 0px 0px;
+        }
+    }
+    // .slide-main-home__image
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 26px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 26px;
+        }
+    }
+    // .slide-main-home__price
+    &__price {
+        position: absolute;
+        top: 63%;
+        left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 16px 5px 5px;
+        border: 1px solid $mainColor;
+        border-radius: 30px;
+        box-shadow: inset 0 0 22px 0 rgba(255, 255, 255, 0.35);
+        background: $white;
+        span {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+        }
+        @media (max-width: $pc) {
+            top: 30px;
+            left: 30px;
+        }
+        @media (max-width: $mobile) {
+            top: 15px;
+            left: 15px;
+        }
+    }
+    // .slide-main-home__currency
+    &__currency {
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background: $mainColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px 0px 0px;
+        &::before {
+            font-size: 12px;
+            color: $white;
+        }
+    }
+    // .slide-main-home__desc
+    &__desc {
+        margin: 0px 0px 0px 0px;
+        max-width: 542px;
+        height: auto;
+    }
+    // .slide-main-home__rows
+    &__rows {
+        flex: 1 1 453px;
+        display: flex;
+        flex-direction: column;
+        a {
+            &:hover {
+                background-color: $mainColor !important;
+                .slide-main-home__arrow {
+                    &::before {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+            margin: 100px 0px 0px 0px;
+        }
+    }
+    // .slide-main-home__row
+    &__row {
+        flex: 1 1 auto;
+        min-height: 135px;
+        border-radius: 26px;
+        padding: 24px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease 0s;
+        @media (max-width: $mobile) {
+            padding: 26px 15px;
+        }
+        .h1 {
+            width: 100%;
+            text-align: center;
+            color: $white;
+        }
+        img {
+            width: 100%;
+            height: 135px;
+            object-fit: cover;
+        }
+    }
+    // .slide-main-home__text
+    &__text {
+    }
+    // .slide-main-home__data
+    &__data {
+        margin: 0px 0px 8px 0px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $white;
+    }
+    // .slide-main-home__title
+    &__title {
+        color: $white;
+    }
+    // .slide-main-home__arrow
+    &__arrow {
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 0px 20px;
+        background: $white;
+        transition: all 0.3s ease 0s;
+        &::before {
+            font-size: 13px;
+            transition: all 0.3s ease 0s;
+        }
+        @media (max-width: $mobile) {
+            margin: 0px 0px 0px 12px;
+        }
+    }
+}
+
+.slide-home-print {
+    padding: 0px 0px 0px 0px;
+    min-height: 230px;
+    @media (max-width: $tablet) {
+        min-height: 135px;
+    }
+}
+
+//========================================================================================================================================================
+
+//Преимущества
+
+.advantages {
+    background: #f4f4f4;
+    padding: 100px 0px;
+    margin: 100px 0px 0px 0px;
+    @media (max-width: $mobile) {
+        padding: 80px 0px;
+        margin: 80px 0px 0px 0px;
+    }
+    // .advantages__container
+    &__container {
+    }
+    // .advantages__body
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            margin: -10px 0px;
+        }
+    }
+    // .advantages__column
+    &__column {
+        flex: 0 1 33.3333%;
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+            padding: 10px 0px;
+        }
+    }
+    // .advantages__item
+    &__item {
+        border-radius: 26px;
+        background: $mainColor;
+        padding: 40px;
+        height: 100%;
+        @media (max-width: $tablet) {
+            padding: 30px;
+        }
+    }
+    // .advantages__icon
+    &__icon {
+        margin: 0px 0px 50px 0px;
+        &::before {
+            font-size: 56px;
+            color: $white;
+        }
+        @media (max-width: $mobile) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+    // .advantages__desc
+    &__desc {
+        p {
+            color: $white;
+            max-width: 270px;
+            @media (max-width: $mobile) {
+                max-width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+    // .advantages__title
+    &__title {
+        margin: 0px 0px 14px 0px;
+        color: $white;
+    }
+}
+
+//========================================================================================================================================================
+
+//Вопросы
+
+.questions {
+    // .questions__container
+    &__container {
+    }
+    // .questions__content
+    &__content {
+    }
+    // .questions__spollers
+    &__spollers {
+    }
+    // .questions__border
+    &__border {
+    }
+}
+
+//========================================================================================================================================================

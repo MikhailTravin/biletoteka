@@ -1,0 +1,23 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: $fontFamilyEuropeext;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: $white;
+	padding: 22px 44px;
+	border-radius: 50px;
+	background: $mainColor;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background: $grey;
+	}
+	&.disabled {
+		pointer-events: none;
+		background: rgb(39, 39, 39, 0.2);
+	}
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оплата успешна"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="breadcrambs">
+				<div class="breadcrambs__container">
+					<div class="breadcrambs__content">
+						<ul>
+							<li>
+								<a href="#">
+									Главная
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Афиша
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Концерт
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Классика
+									<span>/</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									ROCKCELLOS: МИРОВЫЕ РОК-ХИТЫ НА ВИОЛОНЧЕЛЯХ
+									<span>/</span>
+								</a>
+							</li>
+							<li><span>Оплата успешна</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page__payment payment">
+				<div class="payment__container">
+					<div class="payment__content">
+						<div class="payment__top">
+							<h1>оплата успешно совершена</h1>
+							<h5>
+								Ваше бронирование № 123456789876
+							</h5>
+						</div>
+						<div class="payment__body">
+							<div class="payment__column">
+								<div class="payment__item item-payment">
+									<div class="item-payment__top top-order-placement">
+										<div class="top-order-placement__desc">
+											<h5>
+												ROCKCELLOS: МИРОВЫЕ РОК-ХИТЫ НА ВИОЛОНЧЕЛЯХ
+											</h5>
+											<p>
+												Чт, 26 сентября, 19:00
+											</p>
+											<div class="top-order-placement__places">
+												<span>КЗ «Измайлово»</span>
+												<span class="_icon-location">г. Санкт-Петербург, Пироговская наб.,
+													5/2</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="payment__column">
+								<div class="payment__item item-payment">
+									<h5>билеты</h5>
+									<div class="item-payment__body">
+										<div class="item-payment__column desc-order-placement">
+											<div class="desc-order-placement__item">
+												<div class="desc-order-placement__titles">
+													<div class="desc-order-placement__number">№1</div>
+													<div class="desc-order-placement__items">
+														<p>2-ой Амфитеатр середина</p>
+														<p>
+															1 ряд,
+															<br>
+															11 место
+														</p>
+														<div class="desc-order-placement__price">3 100 ₽</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item-payment__column">
+											<div class="desc-order-placement__item desc-order-placement">
+												<div class="desc-order-placement__titles">
+													<div class="desc-order-placement__number">№2</div>
+													<div class="desc-order-placement__items">
+														<p>2-ой Амфитеатр середина</p>
+														<p>
+															1 ряд,
+															<br>
+															12 место
+														</p>
+														<div class="desc-order-placement__price">3 100 ₽</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="payment__column">
+								<div class="payment__item item-payment">
+									<h5>Контактная информация</h5>
+									<div class="item-payment__contacts">
+										<div class="item-payment__contact">
+											<p>ФИО</p>
+											<span>Иванов Иван Иванович</span>
+										</div>
+										<div class="item-payment__contact">
+											<p>Телефон</p>
+											<span>+7 (925) 123-45-67</span>
+										</div>
+										<div class="item-payment__contact">
+											<p>E-mail</p>
+											<span>Ivanov@mail.ru</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="payment__column">
+								<div class="payment__item item-payment">
+									<div class="item-payment__text">
+										<p>
+											Уважаемый клиент,
+										</p>
+										<p>
+											Поздравляем вас с успешным бронированием билетов! Мы рады сообщить, что ваше
+											бронирование подтверждено. Ваши билеты действительны
+											на дату и время, указанные в подтверждении, которое отравлено на ваш E-mail.
+										</p>
+										<p>
+											Если у вас есть вопросы или вам нужна помощь, пожалуйста, свяжитесь с нашей
+											службой поддержки по номеру телефона:
+										</p>
+										<p class="strong">
+											<a href="#">+7 (812) 988-74-18</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

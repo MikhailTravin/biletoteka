@@ -1,0 +1,94 @@
+.options {
+	margin: -8px 0px;
+	// .options__item
+	&__item {
+		padding: 8px 0px;
+	}
+	// .options__input
+	&__input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+		&:checked + .options__label .options__icon {
+			background: $mainColor;
+		}
+		&:checked + .options__label .options__icon:before {
+			opacity: 1;
+		}
+	}
+	// .options__label
+	&__label {
+		display: flex;
+	}
+	// .options__icon
+	&__icon {
+		cursor: pointer;
+		margin: 0px 16px 0px 0px;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 24px;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: #e0e0e0;
+		transition: all 0.3s ease 0s;
+		&::before {
+			font-size: 10px;
+			color: $white;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+		}
+		@media (max-width: $mobile) {
+			display: flex;
+		}
+	}
+	// .options__text
+	&__text {
+		transition: all 0.3s ease 0s;
+		font-size: 14px;
+		line-height: 100%;
+		p {
+			transition: all 0.3s ease 0s;
+		}
+		span {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			transition: all 0.3s ease 0s;
+			&.strong {
+				font-weight: 700;
+			}
+		}
+		&._active {
+			pointer-events: none;
+			p {
+				font-weight: 700;
+				@media (max-width: $mobile) {
+					font-weight: 400;
+				}
+			}
+			span {
+				font-weight: 700;
+				@media (max-width: $mobile) {
+					font-weight: 400;
+				}
+			}
+		}
+		&:hover {
+			p {
+				color: $blue;
+			}
+			span {
+				p {
+					color: $blue;
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			pointer-events: none;
+			font-size: 16px;
+		}
+	}
+}

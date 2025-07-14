@@ -1,0 +1,818 @@
+.page {
+    // .page__events
+    &__events {
+    }
+    // .page__place
+    &__place {
+    }
+}
+
+//========================================================================================================================================================
+
+.events {
+    // .events__container
+    &__container {
+    }
+    // .events__body
+    &__body {
+    }
+    // .events__image
+    &__image {
+        position: relative;
+        height: 460px;
+        margin: 0px 0px 100px 0px;
+        picture {
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width: $mobile) {
+            margin: 0px 0px 80px 0px;
+        }
+        @media (max-width: $mobileSmall) {
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 26px;
+            @media (max-width: $mobileSmall) {
+                height: 200px;
+            }
+        }
+    }
+    // .events__price
+    &__price {
+        top: 30px;
+        left: 30px;
+        @media (max-width: $mobile) {
+            top: 15px;
+            left: 15px;
+        }
+    }
+    // .events__currency
+    &__currency {
+    }
+    // .events__block
+    &__block {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        width: 542px;
+        .desc-block {
+            margin: 0px 0px 0px 0px;
+        }
+        @media (max-width: $mobile) {
+            bottom: 15px;
+            left: 15px;
+            width: 400px;
+        }
+        @media (max-width: $mobileSmall) {
+            position: relative;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            margin: 16px 0px 0px 0px;
+        }
+    }
+    // .events__content
+    &__content {
+        h1 {
+            margin: 0px 0px 40px 0px;
+            @media (max-width: $mobile) {
+                margin: 0px 0px 30px 0px;
+            }
+        }
+    }
+    // .events__time-table
+    &__time-table {
+    }
+    // .events__border
+    &__border {
+    }
+}
+
+.time-table {
+    // .time-table__tabs
+    &__tabs {
+        width: 100%;
+    }
+    // .time-table__body
+    &__body {
+    }
+    // .time-table__items
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    // .time-table__select-content
+    &__select-content {
+        display: block;
+        &.hide {
+            display: none;
+        }
+    }
+    // .time-table__select-ticket
+    &__select-ticket {
+        display: none;
+        &._active {
+            display: block;
+        }
+    }
+    // .time-table__table
+    &__table {
+        width: 100%;
+    }
+    // .time-table__item
+    &__item {
+        background: #f4f4f4;
+        border-radius: 26px;
+    }
+    // .time-table__top
+    &__top {
+    }
+    // .time-table__prices
+    &__prices {
+    }
+    // .time-table__simplebar
+    &__simplebar {
+        max-height: 400px;
+        padding: 0px 40px 20px 40px;
+        @media (max-width: $mobile) {
+            padding: 0px 15px 20px 15px;
+            max-height: 600px;
+        }
+    }
+    // .time-table__bottom
+    &__bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #d9d9d9;
+        padding: 16px 40px;
+        min-height: 138px;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100%;
+            padding: 20px 40px;
+            overflow: hidden;
+        }
+        @media (max-width: $mobile) {
+            padding: 20px 15px;
+            min-height: 100%;
+        }
+    }
+}
+
+.top-time-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 30px 40px;
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media (max-width: $mobile) {
+        padding: 30px 15px 20px 15px;
+    }
+    h5 {
+        @media (max-width: $tablet) {
+            text-align: center;
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    // .top-time-table__sheme
+    &__sheme {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        border: 1px solid $mainColor;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        transition: all 0.3s ease 0s;
+        &::before {
+            font-size: 20px;
+            margin: 0px 10px 0px 0px;
+        }
+        &:hover {
+            color: $white;
+            background: $mainColor;
+            &::before {
+                color: $white;
+            }
+        }
+    }
+    // .top-time-table__back
+    &__back {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        border: 1px solid $mainColor;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        transition: all 0.3s ease 0s;
+        display: none;
+        &::before {
+            transform: rotate(-180deg);
+            font-size: 12px;
+            margin: 0px 10px 0px 0px;
+        }
+        &:hover {
+            color: $white;
+            background: $mainColor;
+            &::before {
+                color: $white;
+            }
+        }
+        &._active {
+            display: flex;
+        }
+        @media (max-width: $tablet) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+}
+
+.prices-time-table {
+    padding: 0px 40px 12px 40px;
+    @media (max-width: $mobile) {
+        padding: 0px 15px 12px 15px;
+    }
+    // .prices-time-table__content
+    &__content {
+        background: $white;
+        padding: 30px 32px;
+        border-radius: 26px;
+        @media (max-width: $mobile) {
+            padding: 20px 15px;
+        }
+    }
+    // .prices-time-table__body
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        @media (max-width: $mobile) {
+            margin: -10px;
+        }
+    }
+    // .prices-time-table__column
+    &__column {
+        padding: 15px;
+        @media (max-width: $mobile) {
+            padding: 10px;
+        }
+    }
+    // .prices-time-table__item
+    &__item {
+        display: flex;
+        align-items: center;
+        span {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 100%;
+        }
+    }
+    // .prices-time-table__color
+    &__color {
+        border-radius: 5px;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 26px;
+        margin: 0px 8px 0px 0px;
+    }
+}
+
+.simplebar-time-table {
+    // .simplebar-time-table__content
+    &__content {
+        margin: -6px 0px;
+    }
+    // .simplebar-time-table__column
+    &__column {
+        padding: 6px 0px;
+        &._active {
+            .simplebar-time-table__item {
+                .simplebar-time-table__buttons {
+                    .title {
+                        color: $blue;
+                    }
+                }
+                .simplebar-time-table__button {
+                    background: $blue;
+                }
+            }
+        }
+    }
+    // .simplebar-time-table__item
+    &__item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 26px;
+        background: $white;
+        width: 100%;
+        padding: 30px 32px;
+        &:hover {
+            .simplebar-time-table__buttons {
+                .title {
+                    color: $blue;
+                }
+            }
+            .simplebar-time-table__button {
+                background: $blue;
+            }
+        }
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+            padding: 20px 15px;
+        }
+    }
+    // .simplebar-time-table__titles
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex: 0 1 405px;
+        margin: 0px 20px 0px 0px;
+        @media (max-width: $mobile) {
+            flex: 1 1 100%;
+            margin: 0px 0px 5px 0px;
+        }
+        .title {
+            text-align: left;
+            @media (max-width: $mobile) {
+                font-size: 16px;
+            }
+            @media (max-width: $mobileSmall) {
+                font-size: 12px;
+            }
+        }
+        p {
+            color: #a9a9a9;
+            margin: 12px 0px 0px 0px;
+            @media (max-width: $mobile) {
+                margin: 4px 0px 0px 0px;
+            }
+            @media (max-width: $mobileSmall) {
+                font-size: 14px;
+            }
+        }
+    }
+    // .simplebar-time-table__title
+    &__title {
+    }
+    // .simplebar-time-table__price
+    &__price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        white-space: nowrap;
+        @media (max-width: $mobileSmall) {
+            font-size: 14px;
+        }
+    }
+    // .simplebar-time-table__buttons
+    &__buttons {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 30px;
+        @media (max-width: $mobile) {
+            justify-content: flex-end;
+            margin: 0px 0px 0px 20px;
+        }
+        .title {
+            transition: all 0.3s ease 0s;
+            text-align: right;
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+    }
+    // .simplebar-time-table__button
+    &__button {
+        transition: all 0.3s ease 0s;
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        padding: 10px;
+        margin: 0px 0px 0px 20px;
+        &::before {
+            font-size: 16px;
+        }
+        @media (max-width: $mobileSmall) {
+            width: 34px;
+            height: 34px;
+            flex: 0 0 34px;
+            padding: 8px;
+            &::before {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.selection-time-table {
+    // .selection-time-table__item
+    &__item {
+        padding: 30px 32px;
+        display: flex;
+        background: $white;
+        border-radius: 26px;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            padding: 20px 15px;
+        }
+    }
+    // .selection-time-table__title
+    &__title {
+        font-family: $fontFamilyEuropeext;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: uppercase;
+        flex: 0 0 107px;
+        margin: 0px 12px 0px 0px;
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+            margin: 0px 0px 16px 0px;
+        }
+    }
+    // .selection-time-table__seating
+    &__seating {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -4px;
+    }
+    // .selection-time-table__seats
+    &__seats {
+        padding: 4px;
+        display: flex;
+        position: relative;
+        &:hover {
+            .seats-tippy {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+        &._active {
+            .seats-tippy {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+        &.selected {
+            span {
+                background: $mainColor;
+                color: $white;
+                border: 1px solid $mainColor;
+            }
+        }
+        @media (max-width: $mobile) {
+        }
+        span {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 8px;
+            flex: 0 0 44px;
+            width: 44px;
+            height: 44px;
+            position: relative;
+            transition: all 0.3s ease 0s;
+            font-family: $fontFamilyMontserrat;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            @media (max-width: $mobile) {
+                width: 40px;
+                height: 40px;
+                flex: 0 0 40px;
+            }
+        }
+    }
+    // .selection-time-table__seats-tippy
+    &__seats-tippy {
+    }
+}
+
+//Подсказка
+.seats-tippy {
+    // .seats-tippy__item
+    &__item {
+        p {
+            text-align: left;
+            color: #a9a9a9;
+            margin: 0px 0px 12px 0px;
+        }
+    }
+    // .seats-tippy__price
+    &__price {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        color: $white;
+        text-align: left;
+    }
+}
+
+//Цвета
+.seats-violet {
+    border: 1px solid #a578ff;
+    &:hover {
+        background: rgb(165, 120, 255, 0.2);
+    }
+}
+.seats-red {
+    border: 1px solid #ff4071;
+    &:hover {
+        background: rgb(255, 64, 113, 0.2);
+    }
+}
+.seats-green {
+    border: 1px solid #0fc5b6;
+    &:hover {
+        background: rgb(15, 197, 182, 0.2);
+    }
+}
+.seats-orange {
+    border: 1px solid #ff5722;
+    &:hover {
+        background: rgb(255, 87, 34, 0.2);
+    }
+}
+.seats-yellow {
+    border: 1px solid #ffad33;
+    &:hover {
+        background: rgb(255, 173, 51, 0.2);
+    }
+}
+
+.bottom-time-table {
+    // .bottom-time-table__content
+    &__content {
+        margin: 0px 20px 0px 0px;
+        flex: 0 1 60%;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+            width: 100%;
+            margin: 0px 0px 30px 0px;
+        }
+        @media (max-width: $mobileSmall) {
+            max-height: 220px;
+        }
+    }
+    // .bottom-time-table__body
+    &__body {
+        display: flex;
+        flex-wrap: nowrap;
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+    // .bottom-time-table__column
+    &__column {
+        flex: 0 0 204px;
+        margin: 0px 8px 0px 0px;
+        display: none;
+        &:last-child {
+            margin: 0px 15px 0px 0px;
+        }
+        &._active {
+            display: block;
+        }
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 auto;
+            margin: 0px 0px 8px 0px;
+            &:last-child {
+                margin: 0px 0px 15px 0px;
+            }
+        }
+    }
+    // .bottom-time-table__item
+    &__item {
+        border-radius: 26px;
+        background: $white;
+        padding: 18px 20px;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        @media (max-width: $mobile) {
+            padding: 18px 15px;
+        }
+        &:hover {
+            .bottom-time-table__close {
+                &::before {
+                    background: $grey;
+                }
+            }
+        }
+        p {
+            max-width: 164px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: #a9a9a9;
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    // .bottom-time-table__close
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            width: 20px;
+            height: 20px;
+            background: $mainColor;
+            padding: 5px;
+            font-size: 10px;
+            color: $white;
+            border-radius: 50%;
+        }
+    }
+    // .bottom-time-table__title
+    &__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+    // .bottom-time-table__price
+    &__price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+    }
+    // .bottom-time-table__buttons
+    &__buttons {
+        flex: 1 0 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+            justify-content: center;
+        }
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+    // .bottom-time-table__totals
+    &__totals {
+        margin: 0px 80px 0px 0px;
+        display: none;
+        .selected-seats & {
+            display: block;
+        }
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 0px 30px 0px;
+            padding: 0px 15px;
+            display: none;
+            .selected-seats & {
+                display: flex;
+            }
+        }
+        p {
+            white-space: nowrap;
+            margin: 0px 0px 12px 0px;
+            @media (max-width: $tablet) {
+                white-space: wrap;
+            }
+            @media (max-width: $mobile) {
+                margin: 0px 12px 0px 0px;
+            }
+        }
+    }
+    // .bottom-time-table__total
+    &__total {
+        white-space: nowrap;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        @media (max-width: $tablet) {
+            white-space: wrap;
+        }
+    }
+    // .bottom-time-table__button
+    &__button {
+        pointer-events: none;
+        background: rgb(39, 39, 39, 0.2);
+        .selected-seats & {
+            pointer-events: auto;
+            background: $mainColor;
+        }
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+//Место проведения
+.place {
+    // .place__container
+    &__container {
+    }
+    // .place__content
+    &__content {
+    }
+    // .place__map
+    &__map {
+        position: relative;
+        border-radius: 26px;
+        width: 100%;
+        height: 650px;
+        @media (max-width: $mobile) {
+            height: 396px;
+        }
+        iframe {
+            position: relative;
+            z-index: 5;
+            border-radius: 26px;
+            width: 100%;
+            height: 650px;
+            @media (max-width: $mobile) {
+                height: 396px;
+            }
+        }
+    }
+    // .place__body
+    &__body {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        z-index: 45;
+        border: 1px solid $mainColor;
+        border-radius: 20px;
+        background: $white;
+        padding: 24px 20px;
+        width: 542px;
+        @media (max-width: $mobile) {
+            width: calc(100% - 30px);
+            left: 15px;
+            bottom: 15px;
+        }
+        @media (max-width: $mobileSmall) {
+            padding: 20px 15px;
+        }
+    }
+    // .place__title
+    &__title {
+        font-family: $fontFamilyEuropeext;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0px 0px 16px 0px;
+        @media (max-width: $mobileSmall) {
+            font-size: 14px;
+            margin: 0px 0px 12px 0px;
+        }
+    }
+    // .place__location
+    &__location {
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        @media (max-width: $mobile) {
+            font-size: 13px;
+        }
+        &::before {
+            font-size: 16px;
+            margin: 0px 6px 0px 0px;
+        }
+    }
+}

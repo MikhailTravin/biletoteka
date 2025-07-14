@@ -1,0 +1,47 @@
+.policy {
+    // .policy__container
+    &__container {
+        max-width: 1560px;
+        @media (max-width: 1590px) {
+            max-width: 1400px;
+        }
+        h1 {
+            text-align: left;
+            margin: 0px 0px 40px 0px;
+            @media (max-width: $mobile) {
+                font-size: 20px;
+                overflow-wrap: anywhere;
+                hyphens: auto !important;
+                -webkit-hyphens: auto !important;
+            }
+        }
+    }
+    // .policy__content
+    &__content {
+        padding: 0px 0px 0px 80px;
+        @media (max-width: 1590px) {
+            padding: 0px 0px 0px 0px;
+        }
+    }
+    // .policy__body
+    &__body {
+        margin: -15px 0px;
+    }
+    // .policy__column
+    &__column {
+        padding: 15px 0px;
+        h5 {
+            margin: 0px 0px 24px 0px;
+            @media (max-width: $mobile) {
+                font-size: 16px;
+                margin: 0px 0px 16px 0px;
+            }
+        }
+        p {
+            margin: 0px 0px 24px 0px;
+            &:last-child {
+                margin: 0px 0px 0px 0px;
+            }
+        }
+    }
+}
